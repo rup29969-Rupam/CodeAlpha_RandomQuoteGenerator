@@ -1,0 +1,163 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+/* Application Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90vh;
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+/* App Header & Title */
+.app-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.app-title {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+}
+
+/* Quote Card */
+.quote-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Quote Content */
+.quote-box {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.quote-text {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #1e293b;
+  font-weight: 500;
+  font-style: italic;
+  min-height: 4.5rem;
+  text-align: center;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.quote-author {
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #64748b;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  text-align: right;
+  transition: opacity 0.25s ease-in-out;
+}
+
+/* Button & Subtle Hover Effect */
+.new-quote-btn {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(59, 130, 246, 0.2);
+}
+
+.new-quote-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.3);
+}
+
+.new-quote-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
+}
+
+.new-quote-btn:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.app-footer p {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 480px) {
+  .app-container {
+    min-height: 85vh;
+  }
+
+  .quote-card {
+    padding: 1.75rem 1.25rem;
+    border-radius: 12px;
+  }
+
+  .quote-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    min-height: 4rem;
+  }
+
+  .quote-author {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+  }
+
+  .new-quote-btn {
+    width: 100%;
+    padding: 0.85rem 1.5rem;
+  }
+}

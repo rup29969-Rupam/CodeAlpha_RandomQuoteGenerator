@@ -33,5 +33,5 @@ Open `index.html` in a modern web browser.
 ## Internship
 
 CodeAlpha App Development Internship  
-Task 2 - Random Quote Generator# CodeAlpha_RandomQuoteGenerator
-Advanced Random Quote Generator - CodeAlpha Internship Task 2
+Task 1 - Random Quote Generator# CodeAlpha_RandomQuoteGenerator
+Advanced Random Quote Generator - CodeAlpha Internship Task 1
